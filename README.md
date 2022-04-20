@@ -1,2 +1,1 @@
-# planets-info-site
- 
+# plaents-info-site
