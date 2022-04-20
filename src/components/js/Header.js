@@ -2,12 +2,19 @@
 import React from 'react';
 import '../css/header.css';
 
-export default function Header() {
+export default function Header( props ) {
+  const {data} = props;
+  const planetNames = data.map(planet => {
+    return <li>
+      {planet.name}
+    </li>
+  })
+  console.log(data)
   return (
-    <header>
+    <header id="main-nav">
       <h1>The Planets</h1>
       <ul>
-        <li>mars</li>
+        {planetNames}
       </ul>
     </header>
   );
