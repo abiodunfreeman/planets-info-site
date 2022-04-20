@@ -1,5 +1,7 @@
-import React from 'react'
-import "../css/header.css"
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
+import '../css/header.css';
+
 export default function Header() {
   return (
     <header>
@@ -8,5 +10,5 @@ export default function Header() {
         <li>mars</li>
       </ul>
     </header>
-  )
+  );
 }
