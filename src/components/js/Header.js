@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import '../css/header.css';
 
 export default function Header( props ) {
-  const {data} = props;
+  const {data, handleChange} = props;
   const planetNames = data.map(planet => {
-    return <li key={planet.name}>
+    return <li key={planet.name} onClick={() => handleChange(planet.name)}>
       {planet.name}
     </li>
   })
