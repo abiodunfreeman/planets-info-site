@@ -14,7 +14,13 @@
     #main{
       border-top: 1px solid #979797;
       padding-top: 5px;
-     
+      display:flex;
+      flex-direction: column;
+     img{
+      border: 1px solid red;
+      margin: 70px 0;
+      align-self: center;
+     }
       #tabs{
         letter-spacing: 1px;
         font-size: 9px;
@@ -23,6 +29,18 @@
         display:flex;
         justify-content: space-evenly;
         align-items: center;
+      }
+    }
+    .Mercury {
+      img{
+        width:111px;
+        height:111px;
+      }
+    }
+    .Venus{
+      img{
+        width:154px;
+        height:154px;
       }
     }
   }
