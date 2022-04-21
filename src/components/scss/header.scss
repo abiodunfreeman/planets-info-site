@@ -15,12 +15,14 @@
   }
   ul{
 
-    max-width: 500px;
+    max-width: 600px;
     // align-self: center;
     flex-grow:1;
-    border: 3px solid red;
+    
+    // border: 3px solid red;
    
     display:flex;
+    
     gap: 1rem;
     font-family: 'League Spartan', sans-serif;
     font-size: 11px;
@@ -28,15 +30,15 @@
     justify-content: center;
     
     li {
-      // border-top: 2px solid blue;
-      padding-top: 2px;
+      border: 2px solid blue;
+      padding: 10px;
       color:#979797;
       list-style: none;
     }
     li:hover{
       color:#FFFFFF;
       cursor: pointer;
-      border-top: 2px solid blue;
+      // border-top: 2px solid blue;
     }
   }
 }
@@ -50,7 +52,7 @@
       padding: 1.5rem;
     }
     ul {
-      gap: 1.5rem;
+      gap: 1rem;
       padding: 1rem;
       
     }
