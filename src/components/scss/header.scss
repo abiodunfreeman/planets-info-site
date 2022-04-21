@@ -1,3 +1,4 @@
+
 #main-nav{
   color: #FFFFFF;
   
@@ -38,4 +39,20 @@
       border-top: 2px solid blue;
     }
   }
+}
+@media(max-width:700px){
+  #main-nav{
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    h1 {
+      align-self: center;
+      padding: 1.5rem;
+    }
+    ul {
+      gap: 1.5rem;
+      padding: 1rem;
+      
+    }
+}
 }

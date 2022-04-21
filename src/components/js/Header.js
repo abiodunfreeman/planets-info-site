@@ -12,6 +12,7 @@ export default function Header( props ) {
   console.log(data)
   return (
     <header id="main-nav">
+      
       <h1>The Planets</h1>
       <ul>
         {planetNames}
