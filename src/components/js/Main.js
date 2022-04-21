@@ -13,9 +13,12 @@ export default function Main(props) {
           <h3>STRUCTURE</h3>
           <h3>SURFACE</h3>
         </div>
-       <img
-        src={planet.images.planet}
-        />
+      
+        <div id="img--container">
+          <img
+          src={planet.images.planet}
+          />
+        </div>
         <div className="main--desc">
           <h1>{planet.name}</h1>
           <p>{planet.overview.content}</p>

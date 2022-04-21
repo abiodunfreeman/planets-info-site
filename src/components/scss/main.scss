@@ -8,6 +8,14 @@
         color:white;
       }
     }
+    #img--container{
+      // border: blue 3px solid;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height:290px;
+
+    }
     .main--desc{
       
       h1{
@@ -28,7 +36,7 @@
       display:flex;
       flex-direction: column;
      img{
-      border: 1px solid red;
+      // border: 1px solid red;
       
       align-self: center;
      }
