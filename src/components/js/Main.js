@@ -2,10 +2,12 @@ import React from 'react'
 import "../css/main.css"
 export default function Main(props) {
   const {data, planet} = props
-  let primaryColor;
-  console.log(planet.name)
+
  
+
+  // if statement returns render according to window.innerWidth, only changes on refresh atm.
   if (window.innerWidth <= 450){
+    
      return (
       <div id={planet.name} className="main">
         <div id="tabs">
