@@ -1,4 +1,19 @@
-#main{
+$Mercury-primary: #419EBB;
+$Venus-primary: #EDA249;
+$Earth-primary: #6D2ED5;
+$Mars-primary: #D14C32;
+$Jupiter-primary: #D83A34;
+$Saturn-primary: #CD5120;
+$Uranus-primary: #1EC1A2;
+$Neptune-primary: #2D68F0;
+.main{
+  #tabs{
+    h3:hover{
+      border-bottom-color: blue;
+    }
+  }
+}
+.main{
     color:white;
     #tabs {
       
@@ -6,6 +21,7 @@
       color: #979797;
       h3:hover{
         color:white;
+        // border-bottom-color: orange;
       }
     }
     #img--container{
@@ -30,7 +46,7 @@
   }
 
   @media(max-width:450px){
-    #main{
+    .main{
       border-top: 1px solid #979797;
       padding-top: 5px;
       display:flex;
@@ -69,51 +85,101 @@
           position:relative;
         }
         h3:hover{
-          border-bottom-color: orange;
+          // border-bottom-color: $Mars-primary;
         }
       }
     }
-    .Mercury {
+    #Mercury {
+      #tabs{
+        .tab:hover{
+          border-bottom-color: $Mercury-primary;
+        }
+      }
       img{
         width:111px;
         height:111px;
       }
     }
-    .Venus{
+    #Venus{
+      #tabs{
+        .tab:hover{
+          border-bottom-color: $Venus-primary;
+        }
+      }
+      
       img{
         width:154px;
         height:154px;
       }
     }
-    .Earth{
+    #Earth{
+      #tabs{
+        .tab:hover{
+          border-bottom-color: $Earth-primary;
+        }
+      }
       img{
         width:173px;
         
       }
     }
-    .Mars{
+    #Mars{
+      #tabs{
+        .tab:hover{
+          border-bottom-color: $Mars-primary;
+        }
+      }
       img{
         width: 129px;
       }
     }
-    .Jupiter{
+    #Jupiter{
+      #tabs{
+        .tab:hover{
+          border-bottom-color: $Jupiter-primary;
+        }
+      }
       img{
         width:224px;
       }
+      
+        h3:hover{
+          border-bottom-color: $Jupiter-primary;
+
+        }
+      
     }
-    .Saturn{
+    #Saturn{
+      #tabs{
+        .tab:hover{
+          border-bottom-color: $Saturn-primary;
+        }
+      }
       img{
         width:256px;
       }
     }
-    .Uranus{
+    #Uranus{
+      #tabs{
+        .tab:hover{
+          border-bottom-color: $Uranus-primary;
+        }
+      }
       img{
         width: 176px;
       }
     }
-    .Neptune{
+    #Neptune{
+      #tabs{
+        .tab:hover{
+          border-bottom-color: $Neptune-primary;
+        }
+      }
       img{
         width: 173px;
+      }
+      #tab:hover{
+        border-bottom-color: $Neptune-primary;
       }
     }
   }

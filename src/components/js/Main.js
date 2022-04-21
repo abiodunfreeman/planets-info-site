@@ -7,11 +7,11 @@ export default function Main(props) {
  
   if (window.innerWidth <= 450){
      return (
-      <div id="main" className={planet.name}>
+      <div id={planet.name} className="main">
         <div id="tabs">
-          <h3>OVERVIEW</h3>
-          <h3>STRUCTURE</h3>
-          <h3>SURFACE</h3>
+          <h3 className='tab'>OVERVIEW</h3>
+          <h3 className='tab'>STRUCTURE</h3>
+          <h3 className='tab'>SURFACE</h3>
         </div>
       
         <div id="img--container">
