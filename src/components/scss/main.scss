@@ -59,6 +59,18 @@
         display:flex;
         justify-content: space-evenly;
         align-items: center;
+        position: relative;
+        height: 50px;
+        h3{
+         z-index: 0;
+          padding-bottom: 20px;
+          top:10px;
+          border-bottom: 2px solid transparent;
+          position:relative;
+        }
+        h3:hover{
+          border-bottom-color: orange;
+        }
       }
     }
     .Mercury {
