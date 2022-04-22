@@ -46,6 +46,15 @@ $Neptune-primary: #2D68F0;
   }
 
   @media(max-width:450px){
+    #main-img{
+      position: relative;
+    }
+    #secondary-img{
+      position: absolute;
+      top: 310px;
+      width:80px;
+      height: auto;
+    }
     .main{
       border-top: 1px solid #979797;
       padding-top: 5px;
@@ -98,7 +107,7 @@ $Neptune-primary: #2D68F0;
           border-bottom-color: $Mercury-primary;
         }
       }
-      img{
+      #main-img{
         width:111px;
         height:111px;
       }
@@ -110,7 +119,7 @@ $Neptune-primary: #2D68F0;
         }
       }
       
-      img{
+      #main-img{
         width:154px;
         height:154px;
       }
@@ -121,7 +130,7 @@ $Neptune-primary: #2D68F0;
           border-bottom-color: $Earth-primary;
         }
       }
-      img{
+      #main-img{
         width:173px;
         
       }
@@ -132,7 +141,7 @@ $Neptune-primary: #2D68F0;
           border-bottom-color: $Mars-primary;
         }
       }
-      img{
+      #main-img{
         width: 129px;
       }
     }
@@ -142,7 +151,7 @@ $Neptune-primary: #2D68F0;
           border-bottom-color: $Jupiter-primary;
         }
       }
-      img{
+      #main-img{
         width:224px;
       }
       
@@ -158,7 +167,7 @@ $Neptune-primary: #2D68F0;
           border-bottom-color: $Saturn-primary;
         }
       }
-      img{
+      #main-img{
         width:256px;
       }
     }
@@ -168,7 +177,7 @@ $Neptune-primary: #2D68F0;
           border-bottom-color: $Uranus-primary;
         }
       }
-      img{
+      #main-img{
         width: 176px;
       }
     }
@@ -178,7 +187,7 @@ $Neptune-primary: #2D68F0;
           border-bottom-color: $Neptune-primary;
         }
       }
-      img{
+      #main-img{
         width: 173px;
       }
       #tab:hover{

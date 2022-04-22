@@ -16,7 +16,7 @@ export default function Main(props) {
     imgSrc = planet.images.internal
   } else if (display === "3" ){
     desc = planet.geology.content
-    imgSrc = planet.images.geology
+    imgSrc = planet.images.planet
   }
 
   // if statement returns render according to window.innerWidth, only changes on refresh atm.
@@ -32,8 +32,10 @@ export default function Main(props) {
       
         <div id="img--container">
           <img
+          id='main-img'
           src={imgSrc}
           />
+          {display === "3" && <img id="secondary-img" src={planet.images.geology}/>}
         </div>
         <div className="main--desc">
           <h1>{planet.name}</h1>
