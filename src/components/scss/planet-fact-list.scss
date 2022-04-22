@@ -1,0 +1,42 @@
+/*
+<ul id="planet-facts-list">
+          <li>
+            Rotation Time
+            <h3>{planet.overview.rotation}</h3>
+          </li>
+*/
+#planet-facts-list{
+  
+  h3{
+    color:white;
+  }
+}
+@media(max-width:450px){
+  
+  #planet-facts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 20px;
+    width: 330px;
+    align-self: center;
+    li{
+    padding: 12px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #D8D8D8;
+    }
+    h4{
+      color: #d8d8d891;
+      font-family: 'League Spartan', sans-serif;
+      font-size: 9px;
+      letter-spacing: .73px;
+    }
+    h3{
+      font-size:20px;
+      font-family: "Antonio";
+      letter-spacing: -.75px;
+    }
+  }
+}
