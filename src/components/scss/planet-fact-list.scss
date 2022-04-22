@@ -6,21 +6,22 @@
           </li>
 */
 #planet-facts-list{
-  
+  border: 5px solid goldenrod;  
   h3{
     color:white;
   }
 }
-@media(max-width:450px){
+
   
   #planet-facts-list{
     display: flex;
-    flex-direction: column;
+    
     gap: 13px;
     padding: 20px;
-    width: 330px;
+    
     align-self: center;
     li{
+    width: 255px;
     padding: 12px;
     display:flex;
     align-items: center;
@@ -39,4 +40,3 @@
       letter-spacing: -.75px;
     }
   }
-}

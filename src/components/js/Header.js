@@ -7,7 +7,7 @@ export default function Header( props ) {
   const planetNames = data.map(planet => {
     //maps planet names into li elements, with an onClick method calling listItemClick
     return <li key={planet.name} onClick={() => listItemClick(planet.name)}>
-      {planet.name}
+      <h4>{planet.name}</h4>
     </li>
   })
  
@@ -19,7 +19,7 @@ export default function Header( props ) {
   function listItemClick(planetName){
     // changes the curPlanet state and hides the planetNames list 
     handleChange(planetName) // function passed through props from <App/> 
-    handleShowList(); // hides list after user clicks on a planet
+    window.innerWidth < 500 && handleShowList(); // hides list after user clicks on a planet
   }
   return (
     <header id="main-nav">
