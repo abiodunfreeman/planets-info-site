@@ -18,16 +18,23 @@ export default function Main(props) {
     desc = planet.geology.content
     imgSrc = planet.images.planet
   }
+   const handleTabClick = ( id) => {
+     const tab = document.getElementById(id);
+     const tabs = [...document.querySelectorAll(".tab")];
+     tabs.forEach(x => x.classList.remove("active"))
+     tab.classList.toggle("active");
+     setDisplay(id)
 
+   }
   // if statement returns render according to window.innerWidth, only changes on refresh atm.
   if (window.innerWidth <= 450){
     
      return (
       <div id={planet.name} className="main">
         <div id="tabs">
-          <h3 className='tab' id="1" onClick={() => setDisplay("1")}>OVERVIEW</h3>
-          <h3 className='tab' id="2" onClick={() => setDisplay("2")}>STRUCTURE</h3>
-          <h3 className='tab' id="3" onClick={() => setDisplay("3")}>SURFACE</h3>
+          <h3 className='tab' id="1" onClick={() => handleTabClick("1")}>OVERVIEW</h3>
+          <h3 className='tab' id="2" onClick={() => handleTabClick("2")}>STRUCTURE</h3>
+          <h3 className='tab' id="3" onClick={() => handleTabClick("3")}>SURFACE</h3>
         </div>
       
         <div id="img--container">
