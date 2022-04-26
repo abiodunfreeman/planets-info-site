@@ -72,6 +72,9 @@ export default function Main(props) {
     )
   }  else {
     return (
+      <div className='wrapper'>
+
+      
       <div id={planet.name} className="main">
       
       <div id="main--container">
@@ -80,15 +83,15 @@ export default function Main(props) {
         id='main-img'
         src={imgSrc}
         />
-        {display === "3" && <img id="secondary-img" src={planet.images.geology}/>}
+        {display === "3" && <div className = "img-wrapper" ><img id="secondary-img" src={planet.images.geology}/></div>}
         </div>
         <div id="main--desc">
         
-        <div id="name-container">
-          <h1>{planet.name}</h1>
-          <p>{desc}</p>
-          <p>Source: <a target="_blank" href={planet.overview.source}>Wikipedia</a></p>
-        </div>
+          <div id="name-container">
+           <h1>{planet.name}</h1>
+           <p>{desc}</p>
+            <p>Source: <a target="_blank" href={planet.overview.source}>Wikipedia</a></p>
+          </div>
         
         <div id="tabs">
             <h3 className='tab' id="1" onClick={() => handleTabClick("1")}>OVERVIEW</h3>
@@ -117,6 +120,7 @@ export default function Main(props) {
           <h3>{planet.temperature}</h3>
           </li>
       </ul>
+     </div>
     </div>
     )
   }

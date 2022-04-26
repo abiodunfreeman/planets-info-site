@@ -5,19 +5,14 @@
             <h3>{planet.overview.rotation}</h3>
           </li>
 */
-#planet-facts-list{
-  border: 5px solid goldenrod;  
-  h3{
-    color:white;
-  }
-}
+
 
   
   #planet-facts-list{
     display: flex;
     
     gap: 13px;
-    padding: 20px;
+    // padding: 20px;
     
     align-self: center;
     li{
@@ -38,5 +33,6 @@
       font-size:20px;
       font-family: "Antonio";
       letter-spacing: -.75px;
+      color:white;
     }
   }

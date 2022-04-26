@@ -6,20 +6,71 @@ $Jupiter-primary: #D83A34;
 $Saturn-primary: #CD5120;
 $Uranus-primary: #1EC1A2;
 $Neptune-primary: #2D68F0;
+.wrapper{
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+}
+
 
 .main{
+  grid-column: 2;
   display: flex;
   flex-direction: column;
   color:white;
-  max-width: 80vw;
+  // max-width: 80vw;
   border: 3px solid blue;
   #main--container{
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(300px, 666px) 1fr;
+    border:3px solid orange;
+    height: 500px;
+    margin-bottom: 45px;
+    
+    #img--container{
+      // width: 666px;
+      border:3px solid #D83A34;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      // padding: 30px;
+      img{
+        position: relative;
+      }
+      .img-wrapper{
+        top: 290px;
+        left: 110px;
+        width: 200px;
+        position: absolute;
+      }
+    }
+    #main--desc{
+      border:3px solid #1EC1A2;
+      #name-container{
+        h1{
+          font-size: 80px;
+          font-family: "Antonio";
+        }
+    }
+    #tabs{
+      border: 5px solid rebeccapurple;
+      h3{
+        cursor: pointer;
+      }
+    }
+  }
+  #planet-facts-list{
+    /*
+    <ul id="planet-facts-list">
+       <li>
+        Rotation Time
+        <h3>{planet.overview.rotation}</h3>
+       </li>
+    */
+    border:3px solid #6D2ED5;
   }
 }
-#img--container{
-  max-width: 666px;
-}
+
 #Mercury{
   
 }
@@ -251,4 +302,4 @@ $Neptune-primary: #2D68F0;
     }
   }
 
-*/
+*/}
