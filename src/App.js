@@ -4,7 +4,7 @@ import Header from './components/js/Header';
 import Main from './components/js/Main';
 import data from "./data.json"
 function App() {
-  const [curPlanet, setCurPlanet] = useState(data[0]) // inits curPlanet 
+  const [curPlanet, setCurPlanet] = useState(data[0]) 
   const handlePlanetChange = (name) => {
     // filters data.JSON for a name that equals the variable passed through and sets the curPlanet to the result
    const cur = data.filter(planet => {
