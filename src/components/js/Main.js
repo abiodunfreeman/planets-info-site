@@ -86,7 +86,7 @@ export default function Main(props) {
             <div id="main--desc">
               <div id="name--container">
                 <h1>{planet.name}</h1>
-                <p>{desc}</p>
+                <p id="first-p">{desc}</p>
                 <p><span class="lower-opacity">Source:</span> <a id="wiki-link" target="_blank" href={planet.overview.source}>Wikipedia</a></p>
               </div>
               <div id="tabs">

@@ -35,6 +35,10 @@ $Neptune-primary: #2D68F0;
         font-size:40px;
         font-family: "Antonio";
       }
+      #first-p{
+        border: 3px solid green;
+        min-height: 170px;
+      }
       p{
         font-family: 'League Spartan', sans-serif;
         font-size: 14px;
@@ -54,31 +58,65 @@ $Neptune-primary: #2D68F0;
       color: white;
       .tab{
         cursor: pointer;
+        padding-left: 15px;
         font-size: 12px;
         display: flex;
         align-items: center;
         min-height: 50px;
         gap:15px;
-        border: 1px solid #D8D8D8;
+        
       }
     }
   }
 }
-
+.tab{
+  border: 1px solid #D8D8D8;
+  
+}
 .lower-opacity{
   opacity: .65;
 }
-
+.main .active{
+  border-color: transparent;
+}
+#Mercury{
+  .active{
+    background-color: $Mercury-primary;
+  }
+}
 #Venus{
   .active{
     background-color: $Venus-primary;
-    border: 1px transparent;
-    // opacity: 1;
   }
 }
 #Earth{
   .active{
     background-color: $Earth-primary;
+  }
+}
+#Mars{
+  .active{
+    background-color: $Mars-primary;
+  }
+}
+#Jupiter{
+  .active{
+    background-color: $Jupiter-primary;
+  }
+}
+#Saturn{
+  .active{
+    background-color: $Saturn-primary;
+  }
+}
+#Uranus{
+  .active{
+    background-color: $Uranus-primary;
+  }
+}
+#Neptune{
+  .active{
+    background-color: $Neptune-primary;
   }
 }
 /*
