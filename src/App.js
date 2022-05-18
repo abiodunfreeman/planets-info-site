@@ -16,8 +16,8 @@ function App() {
   
   return (
     <div className="App">
-      {window.innerWidth}
-      {/* <Header data={data} handleChange={handlePlanetChange}/> */}
+      
+      <Header data={data} handleChange={handlePlanetChange}/>
       <Main data={data} planet={curPlanet}/>
     </div>
   );
