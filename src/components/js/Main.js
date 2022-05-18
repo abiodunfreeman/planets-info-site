@@ -100,7 +100,7 @@ export default function Main(props) {
               </div>
             </div>
           </div>
-{/*      
+     
           <ul id="planet-facts-list">
             <li>
               <h4>Rotation Time</h4>
@@ -119,7 +119,7 @@ export default function Main(props) {
               <h4>Average Temp.</h4>
               <h3>{planet.temperature}</h3>
               </li>
-          </ul> */}
+          </ul>
 
      </div>
    

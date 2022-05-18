@@ -17,14 +17,14 @@ $Neptune-primary: #2D68F0;
 }
 #main--container{
   margin: 1rem;
-  border: 3px solid blueviolet;
+  // border: 3px solid blueviolet;
   display:grid;
   grid-template-columns: 1fr 350px;
   #img--container{
-    min-height: 675px;
+    min-height: 560px;
    
     margin: 1rem;
-    border: 3px solid green;
+    // border: 3px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,18 +41,23 @@ $Neptune-primary: #2D68F0;
     }
   }
   #main--desc{
-    margin: 1rem;
-    border: 3px solid brown;
+    // margin: 1rem;
+    // border: 3px solid brown;
+    display: flex;
+    flex-direction: column;
+    
     #name--container{
+      // border: 3px solid lightblue;
       display: flex;
       flex-direction: column;
       gap: 1.8rem;
       h1{
-        font-size:40px;
+        font-size:80px;
         font-family: "Antonio";
       }
       #first-p{
-        min-height: 170px;
+        min-height: 150px;
+        // border: 5px dashed green;
       }
       p{
         font-family: 'League Spartan', sans-serif;
@@ -66,6 +71,7 @@ $Neptune-primary: #2D68F0;
       }
     }
     #tabs{
+      margin-top:25px;
       display:flex;
       flex-direction: column;
       gap: 10px;
