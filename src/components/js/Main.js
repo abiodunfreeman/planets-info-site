@@ -21,7 +21,11 @@ export default function Main(props) {
    const handleTabClick = ( id) => {
      const tab = document.getElementById(id); // selects current tab
      const tabs = [...document.querySelectorAll(".tab")];
-     tabs.forEach(x => x.classList.remove("active")) 
+     tabs.forEach(x => {
+      x.classList.remove("active");
+      x.classList.add("not-active");
+     }) 
+     tab.classList.remove("not-active");
      tab.classList.toggle("active"); // removes .active from all tabs first, then adds .active to selected tab
      setDisplay(id) // setsDisplay to new tab, thus rerendering and updating the page with proper info
 
