@@ -12,21 +12,34 @@ $Neptune-primary: #2D68F0;
 // }
 .main{
   color:white;
-  // border: 5px solid goldenrod;
+  border: 5px solid goldenrod;
   margin: 0 5% 0 5%;
 }
 #main--container{
   margin: 1rem;
-  // border: 3px solid blueviolet;
+  border: 3px solid blueviolet;
   display:grid;
   grid-template-columns: 1fr 350px;
   #img--container{
+    min-height: 675px;
     margin: 1rem;
-    // border: 3px solid green;
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    .img-wrapper{
+      
+      position: absolute;
+      top:325px;
+      img {
+        width: 165px;
+      }
+    }
   }
   #main--desc{
     margin: 1rem;
-    // border: 3px solid brown;
+    border: 3px solid brown;
     #name--container{
       display: flex;
       flex-direction: column;
@@ -36,7 +49,6 @@ $Neptune-primary: #2D68F0;
         font-family: "Antonio";
       }
       #first-p{
-        border: 3px solid green;
         min-height: 170px;
       }
       p{
@@ -79,6 +91,8 @@ $Neptune-primary: #2D68F0;
 .main .active{
   border-color: transparent;
 }
+
+.App{ /*Slight changes between planets*/
 #Mercury{
   .active{
     background-color: $Mercury-primary;
@@ -118,6 +132,7 @@ $Neptune-primary: #2D68F0;
   .active{
     background-color: $Neptune-primary;
   }
+}
 }
 /*
 .main{
