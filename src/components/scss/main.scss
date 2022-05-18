@@ -76,7 +76,10 @@ $Neptune-primary: #2D68F0;
         align-items: center;
         min-height: 50px;
         gap:15px;
-        
+      }
+      .tab:hover{
+        background-color: #38384F;
+        border-color: transparent;
       }
     }
   }
