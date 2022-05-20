@@ -11,6 +11,7 @@ $Neptune-primary: #2D68F0;
    // border: 5px solid goldenrod;
   color:white;
   margin: 5vh 5% 0 5%;
+  padding-bottom: 10px;
 }
 #main--container{
   // border: 3px solid blueviolet;
@@ -106,6 +107,22 @@ $Neptune-primary: #2D68F0;
   .active{
     background-color: $Mercury-primary;
   }
+  #main--container{
+    #img--container{
+      #main-img{
+        max-width: 290px;
+      }
+    }
+  }
+  @media (max-width:950px) {
+    #main--container{
+      #img--container{
+        #main-img{
+          max-width: 184px;
+        }
+      }
+    }
+  }
   @media (max-width:640px) {
     #main--container{
       #img--container{
@@ -116,10 +133,27 @@ $Neptune-primary: #2D68F0;
     }
   }
  
+ 
 }
 #Venus{
   .active{
     background-color: $Venus-primary;
+  }
+  #main--container{
+    #img--container{
+      #main-img{
+        max-width: 400px;
+      }
+    }
+  }
+  @media (max-width:950px) {
+    #main--container{
+      #img--container{
+        #main-img{
+          max-width: 253px;
+        }
+      }
+    }
   }
   @media (max-width:640px) {
     #main--container{
@@ -135,6 +169,22 @@ $Neptune-primary: #2D68F0;
   .active{
     background-color: $Earth-primary;
   }
+  #main--container{
+    #img--container{
+      #main-img{
+        max-width: 450px;
+      }
+    }
+  }
+  @media (max-width:950px) {
+    #main--container{
+      #img--container{
+        #main-img{
+          max-width: 285px;
+        }
+      }
+    }
+  }
   @media (max-width:640px) {
     #main--container{
       #img--container{
@@ -148,6 +198,22 @@ $Neptune-primary: #2D68F0;
 #Mars{
   .active{
     background-color: $Mars-primary;
+  }
+  #main--container{
+    #img--container{
+      #main-img{
+        max-width: 336px;
+      }
+    }
+  }
+  @media (max-width:950px) {
+    #main--container{
+      #img--container{
+        #main-img{
+          max-width: 213px;
+        }
+      }
+    }
   }
   @media (max-width:640px) {
     #main--container{
@@ -163,6 +229,22 @@ $Neptune-primary: #2D68F0;
   .active{
     background-color: $Jupiter-primary;
   }
+  #main--container{
+    #img--container{
+      #main-img{
+        max-width: 582px;
+      }
+    }
+  }
+  @media (max-width:950px) {
+    #main--container{
+      #img--container{
+        #main-img{
+          max-width: 369px;
+        }
+      }
+    }
+  }
   @media (max-width:640px) {
     #main--container{
       #img--container{
@@ -176,6 +258,22 @@ $Neptune-primary: #2D68F0;
 #Saturn{
   .active{
     background-color: $Saturn-primary;
+  }
+  #main--container{
+    #img--container{
+      #main-img{
+        max-width: 666px;
+      }
+    }
+  }
+  @media (max-width:950px) {
+    #main--container{
+      #img--container{
+        #main-img{
+          max-width: 422px;
+        }
+      }
+    }
   }
   @media (max-width:640px) {
     #main--container{
@@ -191,6 +289,22 @@ $Neptune-primary: #2D68F0;
   .active{
     background-color: $Uranus-primary;
   }
+  #main--container{
+    #img--container{
+      #main-img{
+        max-width: 458px;
+      }
+    }
+  }
+  @media (max-width:950px) {
+    #main--container{
+      #img--container{
+        #main-img{
+          max-width: 290px;
+        }
+      }
+    }
+  }
   @media (max-width:640px) {
     #main--container{
       #img--container{
@@ -204,6 +318,22 @@ $Neptune-primary: #2D68F0;
 #Neptune{
   .active{
     background-color: $Neptune-primary;
+  }
+  #main--container{
+    #img--container{
+      #main-img{
+        max-width: 450px;
+      }
+    }
+  }
+  @media (max-width:950px) {
+    #main--container{
+      #img--container{
+        #main-img{
+          max-width: 285px;
+        }
+      }
+    }
   }
   @media (max-width:640px) {
     #main--container{

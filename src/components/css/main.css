@@ -1,6 +1,7 @@
 .main {
   color: white;
   margin: 5vh 5% 0 5%;
+  padding-bottom: 10px;
 }
 
 #main--container {
@@ -95,6 +96,14 @@
 .App #Mercury .active {
   background-color: #419EBB;
 }
+.App #Mercury #main--container #img--container #main-img {
+  max-width: 290px;
+}
+@media (max-width: 950px) {
+  .App #Mercury #main--container #img--container #main-img {
+    max-width: 184px;
+  }
+}
 @media (max-width: 640px) {
   .App #Mercury #main--container #img--container #main-img {
     max-width: 111px;
@@ -102,6 +111,14 @@
 }
 .App #Venus .active {
   background-color: #EDA249;
+}
+.App #Venus #main--container #img--container #main-img {
+  max-width: 400px;
+}
+@media (max-width: 950px) {
+  .App #Venus #main--container #img--container #main-img {
+    max-width: 253px;
+  }
 }
 @media (max-width: 640px) {
   .App #Venus #main--container #img--container #main-img {
@@ -111,6 +128,14 @@
 .App #Earth .active {
   background-color: #6D2ED5;
 }
+.App #Earth #main--container #img--container #main-img {
+  max-width: 450px;
+}
+@media (max-width: 950px) {
+  .App #Earth #main--container #img--container #main-img {
+    max-width: 285px;
+  }
+}
 @media (max-width: 640px) {
   .App #Earth #main--container #img--container #main-img {
     max-width: 173px;
@@ -118,6 +143,14 @@
 }
 .App #Mars .active {
   background-color: #D14C32;
+}
+.App #Mars #main--container #img--container #main-img {
+  max-width: 336px;
+}
+@media (max-width: 950px) {
+  .App #Mars #main--container #img--container #main-img {
+    max-width: 213px;
+  }
 }
 @media (max-width: 640px) {
   .App #Mars #main--container #img--container #main-img {
@@ -127,6 +160,14 @@
 .App #Jupiter .active {
   background-color: #D83A34;
 }
+.App #Jupiter #main--container #img--container #main-img {
+  max-width: 582px;
+}
+@media (max-width: 950px) {
+  .App #Jupiter #main--container #img--container #main-img {
+    max-width: 369px;
+  }
+}
 @media (max-width: 640px) {
   .App #Jupiter #main--container #img--container #main-img {
     max-width: 224px;
@@ -134,6 +175,14 @@
 }
 .App #Saturn .active {
   background-color: #CD5120;
+}
+.App #Saturn #main--container #img--container #main-img {
+  max-width: 666px;
+}
+@media (max-width: 950px) {
+  .App #Saturn #main--container #img--container #main-img {
+    max-width: 422px;
+  }
 }
 @media (max-width: 640px) {
   .App #Saturn #main--container #img--container #main-img {
@@ -143,6 +192,14 @@
 .App #Uranus .active {
   background-color: #1EC1A2;
 }
+.App #Uranus #main--container #img--container #main-img {
+  max-width: 458px;
+}
+@media (max-width: 950px) {
+  .App #Uranus #main--container #img--container #main-img {
+    max-width: 290px;
+  }
+}
 @media (max-width: 640px) {
   .App #Uranus #main--container #img--container #main-img {
     max-width: 176px;
@@ -150,6 +207,14 @@
 }
 .App #Neptune .active {
   background-color: #2D68F0;
+}
+.App #Neptune #main--container #img--container #main-img {
+  max-width: 450px;
+}
+@media (max-width: 950px) {
+  .App #Neptune #main--container #img--container #main-img {
+    max-width: 285px;
+  }
 }
 @media (max-width: 640px) {
   .App #Neptune #main--container #img--container #main-img {
