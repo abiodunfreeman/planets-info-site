@@ -15,6 +15,8 @@
     height: 128px;
     align-self: center;
     margin: 1rem;
+    
+    
       li{
       width: 255px;
       padding: 12px;
@@ -22,7 +24,7 @@
       flex-direction: column;
       
       justify-content: center;
-      border: 1px solid #D8D8D8;
+      border: .8px solid #838391;
       }
       h4{
         color: #d8d8d891;
@@ -46,6 +48,26 @@
     }
     h3{
       font-size: 24px;
+    }
+  }
+}
+@media(max-width:640px){
+  #planet-facts-list{
+    // border: 5px solid yellow;
+    width: 100%;
+    height:auto;
+    flex-direction: column;
+    li{
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h4{
+      font-size: 8px;
+    }
+    h3{
+      font-size: 20px;
     }
   }
 }

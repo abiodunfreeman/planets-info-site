@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid #D8D8D8;
+  border: 0.8px solid #838391;
 }
 #planet-facts-list h4 {
   color: rgba(216, 216, 216, 0.568627451);
@@ -44,6 +44,25 @@
   }
   #planet-facts-list h3 {
     font-size: 24px;
+  }
+}
+@media (max-width: 640px) {
+  #planet-facts-list {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #planet-facts-list li {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #planet-facts-list h4 {
+    font-size: 8px;
+  }
+  #planet-facts-list h3 {
+    font-size: 20px;
   }
 }
 

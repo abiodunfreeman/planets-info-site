@@ -10,7 +10,7 @@ export default function Header( props ) {
       <h4>{planet.name}</h4>
     </li>
   })
- 
+ console.log("skldfj")
   const logo = "./assets/icon-hamburger.svg"
   const [showList, setShowList] = useState(false);
   const handleShowList = () => {

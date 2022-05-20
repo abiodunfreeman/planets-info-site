@@ -1,11 +1,24 @@
 #hmgIcon,#mobile-planet-list,#mobile-tabs{
     display:none;
 }
+#main-wrapper{
+    // border: 5px solid purple;
+}
 @media(max-width: 640px){
+    #main-wrapper{
+        #mobile-tabs{
+            font-size: 9px;
+            color: white;
+            letter-spacing: 1.93px;
+        }
+    }
     #mobile-tabs{
         display: flex;
-        border: 5px solid red;
+        border-bottom: .8px solid #838391;
         justify-content: space-evenly;
+        width: 100vw;
+        overflow-x: hidden;
+        padding: 15px;
     }
     #hmgIcon{
         display:block;
@@ -26,12 +39,25 @@
             position: absolute;
             top: 100px;
             right: 20px;
-            // z-index: 1;
         }
     }
     .main{
+        // border: 5px solid red;
         margin-top:0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         #main--container{
+            #img--container{
+                min-height: 300px;
+                .img-wrapper{
+                    top:170px;
+                    img {
+                        width: 80px;
+                    }
+                }
+            }
             #main--desc{
                 #tabs{
                     display:none;

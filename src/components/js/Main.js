@@ -20,7 +20,28 @@ export default function Main(props) {
     imgSrc = planet.images.planet
   }
    const handleTabClick = ( id) => {
-     const tab = document.getElementById(id); // selects current tab
+     let setPicId;
+     switch(id){
+       case "m-1":
+         setPicId = "1";
+         break;
+       case "m-2":
+        setPicId = "2";
+        break;
+      case "m-3":
+        setPicId = "3";
+        break;
+      case "3":
+        setPicId = "3";
+        break;
+      case "2":
+          setPicId = "2";
+          break;
+      case "1":
+        setPicId = "1";
+        break;
+     }
+     const currTab = document.getElementById(id); // selects current tab
      const tabs = [...document.querySelectorAll(".tab")];
      tabs.forEach(x => {
       x.classList.remove("active");
@@ -31,64 +52,21 @@ export default function Main(props) {
       x.classList.remove("active");
       x.classList.add("not-active");
      })
-     tab.classList.remove("not-active");
-     tab.classList.toggle("active"); // removes .active from all tabs first, then adds .active to selected tab
-     setDisplay(id) // setsDisplay to new tab, thus rerendering and updating the page with proper info
+     currTab.classList.remove("not-active");
+     currTab.classList.add("active"); // removes .active from all tabs first, then adds .active to selected tab
+     setDisplay(setPicId) // setsDisplay to new tab, thus rerendering and updating the page with proper info
 
    }
-  // if statement returns render according to window.innerWidth, only changes on refresh atm.
-  /* if (window.innerWidth <= 450){
-    
-     return (
-      <div id={planet.name} className="main">
-        <div id="tabs">
-          <h3 className='tab' id="1" onClick={() => handleTabClick("1")}>OVERVIEW</h3>
-          <h3 className='tab' id="2" onClick={() => handleTabClick("2")}>STRUCTURE</h3>
-          <h3 className='tab' id="3" onClick={() => handleTabClick("3")}>SURFACE</h3>
-        </div>
-      
-        <div id="img--container">
-          <img
-          id='main-img'
-          src={imgSrc}
-          />
-          {display === "3" && <img id="secondary-img" src={planet.images.geology}/>}
-        </div>
-        <div className="main--desc">
-          <h1>{planet.name}</h1>
-          <p>{desc}</p>
-          <p>Source: <a target="_blank" href={planet.overview.source}>Wikipedia</a></p>
-        </div>
-        <ul id="planet-facts-list">
-          <li>
-            <h4>Rotation Time</h4>
-            
-            <h3>{planet.rotation}</h3>
-          </li>
-          <li>
-            <h4>Revolution Time </h4>
-            <h3>{planet.revolution}</h3>
-          </li>
-          <li>
-            <h4>Radius</h4>
-            <h3>{planet.radius}</h3>
-            </li>
-          <li>
-            <h4>Average Temp.</h4>
-            <h3>{planet.temperature}</h3>
-            </li>
-        </ul>
-      </div>
-    )
-  }  else { */
+ 
     return (
-      
-        <div id={planet.name} className="main">
-           <div id="mobile-tabs">
-                <h3 className='mobile-tab' id="1" onClick={() => handleTabClick("1")}> OVERVIEW</h3>
-                <h3 className='mobile-tab' id="2" onClick={() => handleTabClick("2")}> STRUCTURE</h3>
-                <h3 className='mobile-tab' id="3" onClick={() => handleTabClick("3")}> SURFACE </h3>
+      <div id="main-wrapper">
+        <div id="mobile-tabs">
+                <h3 className='mobile-tab' id="m-1" onClick={() => handleTabClick("m-1")}> OVERVIEW</h3>
+                <h3 className='mobile-tab' id="m-2" onClick={() => handleTabClick("m-2")}> STRUCTURE</h3>
+                <h3 className='mobile-tab' id="m-3" onClick={() => handleTabClick("m-3")}> SURFACE </h3>
               </div>
+        <div id={planet.name} className="main">
+           
           <div id="main--container">
             <div id="img--container">
               <img
@@ -99,9 +77,9 @@ export default function Main(props) {
             </div>
             <div id="main--desc">
               <div id="name--container">
-                <h1>{planet.name}</h1>
+                <h1>{planet.name.toUpperCase()}</h1>
                 <p id="first-p">{desc}</p>
-                <p><span class="lower-opacity">Source:</span> <a id="wiki-link" target="_blank" href={planet.overview.source}>Wikipedia</a></p>
+                <p><span className="lower-opacity">Source:</span> <a id="wiki-link" target="_blank" href={planet.overview.source}>Wikipedia</a></p>
               </div>
               <div id="tabs">
                 <h3 className='tab' id="1" onClick={() => handleTabClick("1")}><span className="lower-opacity">01</span> OVERVIEW</h3>
@@ -130,9 +108,7 @@ export default function Main(props) {
               <h3>{planet.temperature}</h3>
               </li>
           </ul>
-
-     </div>
-   
+          </div>
+   </div>
     )
- // }
 }
