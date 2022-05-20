@@ -7,6 +7,7 @@
 */
 #planet-facts-list {
   display: flex;
+  gap: 15px;
   justify-content: space-between;
   height: 128px;
   align-self: center;
@@ -31,6 +32,19 @@
   font-family: "Antonio";
   letter-spacing: -0.75px;
   color: white;
+}
+
+@media (max-width: 950px) {
+  #planet-facts-list {
+    height: 88px;
+  }
+  #planet-facts-list li {
+    width: 165px;
+    gap: 10px;
+  }
+  #planet-facts-list h3 {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=planet-fact-list.css.map */

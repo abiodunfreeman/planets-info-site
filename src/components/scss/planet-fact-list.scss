@@ -10,6 +10,7 @@
   
   #planet-facts-list{
     display: flex;
+    gap: 15px;
     justify-content: space-between;
     height: 128px;
     align-self: center;
@@ -36,3 +37,15 @@
         color:white;
       }
   }
+@media(max-width: 950px){
+  #planet-facts-list{
+    height: 88px;
+    li{
+      width:165px;
+      gap:10px;
+    }
+    h3{
+      font-size: 24px;
+    }
+  }
+}

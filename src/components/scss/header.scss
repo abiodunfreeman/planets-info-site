@@ -30,11 +30,16 @@ header{
           }
   }
 }
-@media (max-width:1000px){
+@media (max-width:950px){
   header{
     flex-direction: column;
     gap: 2rem;
     padding:1.5rem;
+    ul{
+      width: 100%;
+      margin-right: 0;
+      justify-content: space-evenly;
+    }
   }
 }
 

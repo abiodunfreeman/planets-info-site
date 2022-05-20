@@ -1,22 +1,10 @@
-@media (max-width: 950px) {
-  #main--container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h1, p {
-    text-align: center;
-  }
-}
 .main {
   color: white;
-  border: 5px solid goldenrod;
-  margin: 0 5% 0 5%;
+  margin: 5vh 5% 0 5%;
 }
 
 #main--container {
   margin: 1rem;
-  border: 3px solid blueviolet;
   display: flex;
   justify-content: center;
 }
@@ -24,7 +12,6 @@
   min-height: 560px;
   width: 100%;
   margin: 1rem;
-  border: 3px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +30,6 @@
 #main--container #main--desc {
   justify-self: end;
   width: 375px;
-  border: 3px solid brown;
   display: flex;
   flex-direction: column;
 }
@@ -131,6 +117,40 @@
   background-color: #2D68F0;
 }
 
+@media (max-width: 950px) {
+  #main--container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main--container #img--container #main-img {
+    max-width: 300px;
+  }
+  #main--container #img--container .img-wrapper img {
+    width: 120px;
+  }
+  #main--container #main--desc {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #main--container #main--desc #name--container {
+    max-width: 340px;
+    gap: 1rem;
+  }
+  #main--container #main--desc #name--container #first-p {
+    min-height: 110px;
+  }
+  #main--container #main--desc #name--container h1 {
+    font-size: 48px;
+  }
+  #main--container #main--desc #name--container p {
+    font-size: 11px;
+  }
+  #main--container #main--desc #tabs {
+    min-width: 285px;
+  }
+}
 /*
 .main{
   #tabs{
