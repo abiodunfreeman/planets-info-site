@@ -23,14 +23,16 @@ export default function Header( props ) {
   }
   return (
     <header id="main-nav">
-      
-      <h1>The Planets</h1>
-     {window.innerWidth > 450 ?  <ul>
+       <h1>The Planets</h1>
+
+      <ul id="planet-list">
         {planetNames}
-      </ul> :
-      <img src={logo} onClick={() => handleShowList()}/>
-      }
-      {showList && <ul>{planetNames}</ul>}
+      </ul> 
+
+      <img id="hmgIcon" src={logo} onClick={() => handleShowList()}/>
+      
+
+      {showList && <ul id="mobile-planet-list">{planetNames}</ul>}
     </header>
   );
 }

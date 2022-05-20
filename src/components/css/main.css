@@ -95,26 +95,66 @@
 .App #Mercury .active {
   background-color: #419EBB;
 }
+@media (max-width: 640px) {
+  .App #Mercury #main--container #img--container #main-img {
+    max-width: 111px;
+  }
+}
 .App #Venus .active {
   background-color: #EDA249;
+}
+@media (max-width: 640px) {
+  .App #Venus #main--container #img--container #main-img {
+    max-width: 154px;
+  }
 }
 .App #Earth .active {
   background-color: #6D2ED5;
 }
+@media (max-width: 640px) {
+  .App #Earth #main--container #img--container #main-img {
+    max-width: 173px;
+  }
+}
 .App #Mars .active {
   background-color: #D14C32;
+}
+@media (max-width: 640px) {
+  .App #Mars #main--container #img--container #main-img {
+    max-width: 129px;
+  }
 }
 .App #Jupiter .active {
   background-color: #D83A34;
 }
+@media (max-width: 640px) {
+  .App #Jupiter #main--container #img--container #main-img {
+    max-width: 224px;
+  }
+}
 .App #Saturn .active {
   background-color: #CD5120;
+}
+@media (max-width: 640px) {
+  .App #Saturn #main--container #img--container #main-img {
+    max-width: 256px;
+  }
 }
 .App #Uranus .active {
   background-color: #1EC1A2;
 }
+@media (max-width: 640px) {
+  .App #Uranus #main--container #img--container #main-img {
+    max-width: 176px;
+  }
+}
 .App #Neptune .active {
   background-color: #2D68F0;
+}
+@media (max-width: 640px) {
+  .App #Neptune #main--container #img--container #main-img {
+    max-width: 173px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -130,6 +170,7 @@
   }
   #main--container #main--desc {
     flex-direction: row;
+    gap: 20px;
     width: 100%;
     justify-content: space-between;
     align-items: center;

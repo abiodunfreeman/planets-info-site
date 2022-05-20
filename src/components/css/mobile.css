@@ -1,0 +1,30 @@
+#hmgIcon, #mobile-planet-list {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  #hmgIcon {
+    display: block;
+  }
+
+  #planet-list {
+    display: none;
+  }
+
+  header {
+    flex-direction: row;
+    gap: 0;
+    position: relative;
+  }
+  header #mobile-planet-list {
+    display: flex;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

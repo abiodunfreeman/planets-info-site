@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "../css/main.css"
+import "../css/mobile.css"
 import "../css/planet-fact-list.css"
 export default function Main(props) {
 
@@ -31,7 +32,7 @@ export default function Main(props) {
 
    }
   // if statement returns render according to window.innerWidth, only changes on refresh atm.
-  if (window.innerWidth <= 450){
+  /* if (window.innerWidth <= 450){
     
      return (
       <div id={planet.name} className="main">
@@ -74,7 +75,7 @@ export default function Main(props) {
         </ul>
       </div>
     )
-  }  else {
+  }  else { */
     return (
       
         <div id={planet.name} className="main">
@@ -124,5 +125,5 @@ export default function Main(props) {
      </div>
    
     )
-  }
+ // }
 }
