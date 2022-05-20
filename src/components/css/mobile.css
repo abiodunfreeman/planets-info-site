@@ -1,8 +1,14 @@
-#hmgIcon, #mobile-planet-list {
+#hmgIcon, #mobile-planet-list, #mobile-tabs {
   display: none;
 }
 
 @media (max-width: 640px) {
+  #mobile-tabs {
+    display: flex;
+    border: 5px solid red;
+    justify-content: space-evenly;
+  }
+
   #hmgIcon {
     display: block;
   }
@@ -12,6 +18,7 @@
   }
 
   header {
+    height: 8vh;
     flex-direction: row;
     gap: 0;
     position: relative;
@@ -24,6 +31,13 @@
     position: absolute;
     top: 100px;
     right: 20px;
+  }
+
+  .main {
+    margin-top: 0;
+  }
+  .main #main--container #main--desc #tabs {
+    display: none;
   }
 }
 

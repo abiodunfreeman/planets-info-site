@@ -26,6 +26,11 @@ export default function Main(props) {
       x.classList.remove("active");
       x.classList.add("not-active");
      }) 
+     const mobileTabs = [...document.querySelectorAll(".mobile-tab")]
+     mobileTabs.forEach(x => {
+      x.classList.remove("active");
+      x.classList.add("not-active");
+     })
      tab.classList.remove("not-active");
      tab.classList.toggle("active"); // removes .active from all tabs first, then adds .active to selected tab
      setDisplay(id) // setsDisplay to new tab, thus rerendering and updating the page with proper info
@@ -79,7 +84,11 @@ export default function Main(props) {
     return (
       
         <div id={planet.name} className="main">
-
+           <div id="mobile-tabs">
+                <h3 className='mobile-tab' id="1" onClick={() => handleTabClick("1")}> OVERVIEW</h3>
+                <h3 className='mobile-tab' id="2" onClick={() => handleTabClick("2")}> STRUCTURE</h3>
+                <h3 className='mobile-tab' id="3" onClick={() => handleTabClick("3")}> SURFACE </h3>
+              </div>
           <div id="main--container">
             <div id="img--container">
               <img
