@@ -1,165 +1,121 @@
-$Mercury-primary: #419EBB;
-$Venus-primary: #EDA249;
-$Earth-primary: #6D2ED5;
-$Mars-primary: #D14C32;
-$Jupiter-primary: #D83A34;
-$Saturn-primary: #CD5120;
-$Uranus-primary: #1EC1A2;
-$Neptune-primary: #2D68F0;
-
-// .main--container > * {
-//   margin: 1rem;
-// }
-@media(max-width: 950px){
-  #main--container{
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  h1,p{
-    text-align: center;
-  }
-  
-}
-.main{
-  color:white;
+.main {
+  color: white;
   border: 5px solid goldenrod;
   margin: 0 5% 0 5%;
 }
-#main--container{
+
+#main--container {
   margin: 1rem;
   border: 3px solid blueviolet;
-  display:flex;
-  justify-content: center;
-  #img--container{
-    min-height: 560px;
-   width:100%;
-    margin: 1rem;
-    border: 3px solid green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    #main-img{
-      max-width: 500px;
-    }
-    .img-wrapper{
-      position: absolute;
-      top:325px;
-      img {
-        width: 165px;
-      }
-    }
-  }
-  #main--desc{
-    // margin: 1rem;
-    
-    justify-self:end;
-    width:375px;
-    border: 3px solid brown;
-    display: flex;
-    flex-direction: column;
-    
-    #name--container{
-      // border: 3px solid lightblue;
-      display: flex;
-      flex-direction: column;
-      gap: 1.8rem;
-      h1{
-        font-size:80px;
-        font-family: "Antonio";
-      }
-      #first-p{
-        min-height: 150px;
-        // border: 5px dashed green;
-      }
-      p{
-        font-family: 'League Spartan', sans-serif;
-        font-size: 14px;
-        opacity: .85;
-        line-height: 1.4rem;
-        #wiki-link {
-          color:white;
-        }
-        
-      }
-    }
-    #tabs{
-      margin-top:25px;
-      display:flex;
-      flex-direction: column;
-      gap: 10px;
-      font-family: 'League Spartan', sans-serif;
-      color: white;
-      .tab{
-        cursor: pointer;
-        padding-left: 15px;
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        min-height: 50px;
-        gap:15px;
-      }
-      
-    }
-  }
+  display: grid;
+  grid-template-columns: 1fr 350px;
 }
-.tab{
+#main--container #img--container {
+  min-height: 560px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#main--container #img--container #main-img {
+  max-width: 500px;
+}
+#main--container #img--container .img-wrapper {
+  position: absolute;
+  top: 325px;
+}
+#main--container #img--container .img-wrapper img {
+  width: 165px;
+}
+#main--container #main--desc {
+  display: flex;
+  flex-direction: column;
+}
+#main--container #main--desc #name--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+#main--container #main--desc #name--container h1 {
+  font-size: 80px;
+  font-family: "Antonio";
+}
+#main--container #main--desc #name--container #first-p {
+  min-height: 150px;
+}
+#main--container #main--desc #name--container p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.4rem;
+}
+#main--container #main--desc #name--container p #wiki-link {
+  color: white;
+}
+#main--container #main--desc #tabs {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "League Spartan", sans-serif;
+  color: white;
+}
+#main--container #main--desc #tabs .tab {
+  cursor: pointer;
+  padding-left: 15px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  gap: 15px;
+}
+
+.tab {
   border: 1px solid #D8D8D8;
 }
-.not-active:hover{
+
+.not-active:hover {
   background-color: #38384F;
   border-color: transparent;
 }
-.lower-opacity{
-  opacity: .65;
+
+.lower-opacity {
+  opacity: 0.65;
 }
-.main .active{
+
+.main .active {
   border-color: transparent;
 }
 
-.App{ /*Slight changes between planets*/
-#Mercury{
-  .active{
-    background-color: $Mercury-primary;
-  }
+.App {
+  /*Slight changes between planets*/
 }
-#Venus{
-  .active{
-    background-color: $Venus-primary;
-  }
+.App #Mercury .active {
+  background-color: #419EBB;
 }
-#Earth{
-  .active{
-    background-color: $Earth-primary;
-  }
+.App #Venus .active {
+  background-color: #EDA249;
 }
-#Mars{
-  .active{
-    background-color: $Mars-primary;
-  }
+.App #Earth .active {
+  background-color: #6D2ED5;
 }
-#Jupiter{
-  .active{
-    background-color: $Jupiter-primary;
-  }
+.App #Mars .active {
+  background-color: #D14C32;
 }
-#Saturn{
-  .active{
-    background-color: $Saturn-primary;
-  }
+.App #Jupiter .active {
+  background-color: #D83A34;
 }
-#Uranus{
-  .active{
-    background-color: $Uranus-primary;
-  }
+.App #Saturn .active {
+  background-color: #CD5120;
 }
-#Neptune{
-  .active{
-    background-color: $Neptune-primary;
-  }
+.App #Uranus .active {
+  background-color: #1EC1A2;
 }
+.App #Neptune .active {
+  background-color: #2D68F0;
 }
+
 /*
 .main{
   #tabs{
@@ -171,7 +127,7 @@ $Neptune-primary: #2D68F0;
 .main{
     color:white;
     #tabs {
-      
+
       font-family: 'League Spartan', sans-serif;
       color: #979797;
       h3:hover{
@@ -188,7 +144,7 @@ $Neptune-primary: #2D68F0;
 
     }
     .main--desc{
-      
+
       h1{
         font-size:40px;
         font-family: "Antonio";
@@ -217,7 +173,7 @@ $Neptune-primary: #2D68F0;
       flex-direction: column;
      img{
       // border: 1px solid red;
-      
+
       align-self: center;
      }
      .main--desc{
@@ -283,7 +239,7 @@ $Neptune-primary: #2D68F0;
           border-bottom-color: $Venus-primary;
         }
       }
-      
+
       #main-img{
         width:154px;
         height:154px;
@@ -301,7 +257,7 @@ $Neptune-primary: #2D68F0;
       }
       #main-img{
         width:173px;
-        
+
       }
     }
     #Mars{
@@ -331,12 +287,12 @@ $Neptune-primary: #2D68F0;
       #main-img{
         width:224px;
       }
-      
+
         h3:hover{
           border-bottom-color: $Jupiter-primary;
 
         }
-      
+
     }
     #Saturn{
       #tabs{
@@ -386,3 +342,5 @@ $Neptune-primary: #2D68F0;
   }
 
 */
+
+/*# sourceMappingURL=main.css.map */
