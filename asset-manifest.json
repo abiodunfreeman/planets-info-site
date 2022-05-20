@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/bornduringwar/planets-info-site/static/css/main.4ca1a7c5.css",
+    "main.js": "/bornduringwar/planets-info-site/static/js/main.fd3e6b42.js",
+    "static/media/background-stars.svg": "/bornduringwar/planets-info-site/static/media/background-stars.f6233a6a8d2351c57f2b.svg",
+    "index.html": "/bornduringwar/planets-info-site/index.html",
+    "main.4ca1a7c5.css.map": "/bornduringwar/planets-info-site/static/css/main.4ca1a7c5.css.map",
+    "main.fd3e6b42.js.map": "/bornduringwar/planets-info-site/static/js/main.fd3e6b42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ca1a7c5.css",
+    "static/js/main.fd3e6b42.js"
+  ]
+}
